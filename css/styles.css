@@ -1,0 +1,24 @@
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#405de6;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:900px;margin:36px auto;padding:20px}
+.profile{display:flex;align-items:center;gap:18px;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 4px 12px rgba(16,24,40,0.06)}
+.profile-info .name{margin:0;font-size:1.25rem}
+.handle{margin:6px 0;color:var(--muted)}
+.insta-btn{display:inline-block;padding:8px 12px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+.about{margin-top:18px;background:var(--card);padding:16px;border-radius:12px}
+.services{margin-top:18px}
+.services h2{margin:0 0 12px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{display:block;background:var(--card);padding:16px;border-radius:10px;text-decoration:none;color:inherit;border:1px solid rgba(16,24,40,0.04);box-shadow:0 6px 18px rgba(16,24,40,0.03);transition:transform .14s ease,box-shadow .14s ease}
+.card h3{margin:0 0 8px 0}
+.card p{margin:0;color:var(--muted)}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(16,24,40,0.08)}
+
+@media (max-width:520px){.profile{flex-direction:row;gap:12px}.avatar{width:72px;height:72px}.container{margin:18px}} 
